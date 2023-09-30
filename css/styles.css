@@ -73,7 +73,6 @@ address {
     display: flex;
     align-items: center;
     flex-grow: 1;
-    gap: 76px;
 }
 
 .header-logo {
@@ -85,6 +84,7 @@ address {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     padding: 24px 0;
+    margin-right: 76px;
 }
 .header-logo-color {
     color: #2e2f42;
@@ -139,7 +139,7 @@ address {
     font-weight: 700;
     line-height: 1.07;
     letter-spacing: 0.02em;
-    width: 496px;
+    max-width: 496px;
     text-align: center;
     margin: 0 auto 48px auto;
 }
@@ -153,6 +153,10 @@ address {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
     padding: 16px 32px;
     display: block;
     margin: 0 auto;
@@ -165,7 +169,7 @@ address {
 
 /** --------------------- FEATURES ----------------------- */
 .feature {
-    padding: 120px; 0
+    padding: 120px 0;
 }
 
 .feature-menu {
@@ -223,8 +227,8 @@ address {
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
-.team-img {
-    margin-bottom: 32px;
+.team-description {
+    padding: 32px 0;
 }
 
 .team-subtitle {
@@ -267,13 +271,14 @@ address {
 }
 
 .portfolio-item {
-    padding-bottom: 32px;
     width: calc((100% - 24px * 2) / 3);
     border: 1px solid #E7E9FC;
 }
 
-.portfolio-img {
-    margin-bottom: 32px;
+.portfolio-app {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
 }
 
 .portfolio-subtitle {
@@ -306,6 +311,8 @@ address {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .footer-logo-color {
@@ -318,5 +325,4 @@ address {
     line-height: 1.5;
     letter-spacing: 0.02em;
     width: 264px;
-    margin-top: 16px;
 }
